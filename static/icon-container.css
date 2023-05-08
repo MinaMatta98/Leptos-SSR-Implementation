@@ -1,0 +1,68 @@
+#icon-section {
+margin-top: 4%;
+}
+
+#icon-section h1 {
+font-size: 3em;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+	color: #333;
+}
+
+.icon-container a {
+	text-decoration: none;
+	color: #333;
+	margin: 1% 5% 2% 5%;
+	text-align: center;
+}
+
+.icon-with-heading {
+    text-align:center;
+    transition: transform 0.5s ease-in-out;
+	margin: auto;
+	justify-content: center;
+}
+
+.icon-with-heading:hover i {
+position: relative;
+padding: 100px;
+margin: auto;
+	text-align: center;
+}
+
+.icon-with-heading i {
+	padding: 200px 150px;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+}
+
+.icon-with-heading p {
+font-size: 17px;
+	padding-left: 50px;
+	font-family: sans-serif;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+.circular-border {
+    font-size: 3em;
+    border-radius: 20px;
+    border: 2px solid #333;
+    padding: 20px;
+    display:inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.display-box {
+	position: inherit;
+    border-radius: 10px;
+	background: #333;
+	padding: 50px;
+	color: #eeeeee;
+	/* margin-left: 5%; */
+	justify-content: center;
+}

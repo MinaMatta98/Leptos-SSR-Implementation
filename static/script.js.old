@@ -1,0 +1,45 @@
+// Select all links
+function changeColor(element) {
+	// element.style.color = "#999999";
+	element.style.fontSize = "4em";
+	element.style.transform = "translate(0px, -10px)";
+	var parent = element.parentNode.parentNode;
+	var child = element.childNodes;
+	var siblings = parent.parentNode.children;
+			console.log(parent)
+	for (var i = 0; i < siblings.length; i++) {
+		if (siblings[i] != parent) {
+			console.log(siblings[i])
+			console.log("siblings")
+			siblings[i].style.display = "none";
+		}
+	}
+	element.parentNode.parentNode.style.width = "100%";
+	element.parentNode.style.position = "relative";
+	element.style.width = "calc(100% - 300px)";
+	element.style.borderRadius = "20px";
+	element.style.textAlign = "left";
+	child[1].style.display = "flex"
+	child[1].childNodes[1].style.display = "flex"
+}
+
+function changeColorBack(element) {
+	element.style.fontSize = "3em";
+	element.style.color = "#333333";
+	element.style.transform = "";
+	var parent = element.parentNode.parentNode;
+	var child = element.childNodes;
+	var siblings = parent.parentNode.children;
+	for (var i = 0; i < siblings.length; i++) {
+		if (siblings[i] != parent) {
+			siblings[i].style.display = "block";
+		}
+	}
+
+	element.parentNode.parentNode.style.width = "";
+	element.style.width = "";
+	element.parentNode.style.position = "relative";
+	element.style.borderRadius = "";
+	child[1].style.display = "none"
+	child[1].childNodes[1].style.display = ""
+}

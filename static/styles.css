@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-image: url("/static/dot-pattern.svg");
+}
+
+body img {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  /* color: #9a4aff; */
+  color: #333333;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+iframe {
+width: 100%;
+padding: 0;
+margin:0;
+border: none;
+}
+
+
+/* ul { */
+/*     list-style-type: none; */
+/*     margin-left: 0; */
+/*     padding-left: 0; */
+/* } */
+
+/* a { */
+/*     color: #003366; */
+/*     text-decoration: none; */
+/* } */
+

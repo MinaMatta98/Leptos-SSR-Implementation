@@ -1,0 +1,2809 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "document"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "getElementById"
+          }
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "drop-area",
+            "raw": "\"drop-area\""
+          }
+        ]
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "dropArea"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "document"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "getElementById"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "drop-area",
+                      "raw": "\"drop-area\""
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "fileElem"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "document"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "getElementById"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "file-input",
+                      "raw": "\"file-input\""
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "dropArea"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "addEventListener"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "dragenter",
+                  "raw": "\"dragenter\""
+                },
+                {
+                  "type": "Identifier",
+                  "name": "preventDefaults"
+                },
+                {
+                  "type": "Literal",
+                  "value": false,
+                  "raw": "false"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "dropArea"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "addEventListener"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "dragover",
+                  "raw": "\"dragover\""
+                },
+                {
+                  "type": "Identifier",
+                  "name": "preventDefaults"
+                },
+                {
+                  "type": "Literal",
+                  "value": false,
+                  "raw": "false"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "dropArea"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "addEventListener"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "dragleave",
+                  "raw": "\"dragleave\""
+                },
+                {
+                  "type": "Identifier",
+                  "name": "preventDefaults"
+                },
+                {
+                  "type": "Literal",
+                  "value": false,
+                  "raw": "false"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "dropArea"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "addEventListener"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "drop",
+                  "raw": "\"drop\""
+                },
+                {
+                  "type": "Identifier",
+                  "name": "preventDefaults"
+                },
+                {
+                  "type": "Literal",
+                  "value": false,
+                  "raw": "false"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "dropArea"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "addEventListener"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "drop",
+                  "raw": "\"drop\""
+                },
+                {
+                  "type": "Identifier",
+                  "name": "handleDrop"
+                },
+                {
+                  "type": "Literal",
+                  "value": false,
+                  "raw": "false"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "fileElem"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "addEventListener"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "change",
+                  "raw": "\"change\""
+                },
+                {
+                  "type": "Identifier",
+                  "name": "handleFiles"
+                },
+                {
+                  "type": "Literal",
+                  "value": false,
+                  "raw": "false"
+                }
+              ]
+            }
+          },
+          {
+            "type": "FunctionDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "preventDefaults"
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "e"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "e"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "preventDefault"
+                      }
+                    },
+                    "arguments": []
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "e"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "stopPropagation"
+                      }
+                    },
+                    "arguments": []
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+          },
+          {
+            "type": "FunctionDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "handleDrop"
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "e"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "dt"
+                      },
+                      "init": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "e"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "dataTransfer"
+                        }
+                      }
+                    }
+                  ],
+                  "kind": "let"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "files"
+                      },
+                      "init": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "dt"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "files"
+                        }
+                      }
+                    }
+                  ],
+                  "kind": "let"
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "handleFiles"
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "files"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+          },
+          {
+            "type": "FunctionDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "handleFiles"
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "files"
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "LogicalExpression",
+                    "operator": "&&",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "files"
+                    },
+                    "right": {
+                      "type": "BinaryExpression",
+                      "operator": ">",
+                      "left": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "files"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "length"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 0,
+                        "raw": "0"
+                      }
+                    }
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "fileElem"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "files"
+                            }
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "files"
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "fileElem"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "dispatchEvent"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "NewExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "Event"
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "change",
+                                  "raw": "\"change\""
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": null
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "console"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "log"
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "fileElem"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "Identifier",
+                        "name": "console"
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "log"
+                      }
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "files"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "window"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "onload"
+                }
+              },
+              "right": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "document"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "querySelector"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "Literal",
+                                "value": "#file-input",
+                                "raw": "\"#file-input\""
+                              }
+                            ]
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "value"
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "",
+                          "raw": "\"\""
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "document"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "querySelector"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "Literal",
+                                "value": "#submit-button",
+                                "raw": "\"#submit-button\""
+                              }
+                            ]
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "disabled"
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": true,
+                          "raw": "true"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "generator": false,
+                "expression": false,
+                "async": false
+              }
+            }
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "urlParams"
+                },
+                "init": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "URLSearchParams"
+                  },
+                  "arguments": [
+                    {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "window"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "location"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "search"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "success"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "urlParams"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "has"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "success",
+                      "raw": "\"success\""
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "large"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "urlParams"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "has"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "outofbounds",
+                      "raw": "\"outofbounds\""
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "failure"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "urlParams"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "has"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "failure",
+                      "raw": "\"failure\""
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "remove"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "urlParams"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "has"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "remove",
+                      "raw": "\"remove\""
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "const"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "console"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "log"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "failure"
+                }
+              ]
+            }
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "Identifier",
+              "name": "success"
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "document"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "getElementById"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "result",
+                              "raw": "\"result\""
+                            }
+                          ]
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "style"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "whiteSpace"
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "no-wrap",
+                      "raw": "\"no-wrap\""
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "document"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "getElementById"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "result",
+                              "raw": "\"result\""
+                            }
+                          ]
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "style"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "display"
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "block",
+                      "raw": "\"block\""
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "MemberExpression",
+                          "computed": true,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "document"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getElementById"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "result",
+                                  "raw": "\"result\""
+                                }
+                              ]
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "childNodes"
+                            }
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": 1,
+                            "raw": "1"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "style"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "display"
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "unset",
+                      "raw": "\"unset\""
+                    }
+                  }
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "MemberExpression",
+                          "computed": true,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "document"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getElementById"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "result",
+                                  "raw": "\"result\""
+                                }
+                              ]
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "childNodes"
+                            }
+                          },
+                          "property": {
+                            "type": "Literal",
+                            "value": 3,
+                            "raw": "3"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "style"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "display"
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "unset",
+                      "raw": "\"unset\""
+                    }
+                  }
+                }
+              ]
+            },
+            "alternate": {
+              "type": "IfStatement",
+              "test": {
+                "type": "Identifier",
+                "name": "large"
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "document"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "getElementById"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "Literal",
+                                "value": "result",
+                                "raw": "\"result\""
+                              }
+                            ]
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "style"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "whiteSpace"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": "no-wrap",
+                        "raw": "\"no-wrap\""
+                      }
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "document"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "getElementById"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "Literal",
+                                "value": "result",
+                                "raw": "\"result\""
+                              }
+                            ]
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "style"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "display"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": "block",
+                        "raw": "\"block\""
+                      }
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "document"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getElementById"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "result",
+                                    "raw": "\"result\""
+                                  }
+                                ]
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "childNodes"
+                              }
+                            },
+                            "property": {
+                              "type": "Literal",
+                              "value": 5,
+                              "raw": "5"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "style"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "display"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": "unset",
+                        "raw": "\"unset\""
+                      }
+                    }
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": true,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "document"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getElementById"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "result",
+                                    "raw": "\"result\""
+                                  }
+                                ]
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "childNodes"
+                              }
+                            },
+                            "property": {
+                              "type": "Literal",
+                              "value": 7,
+                              "raw": "7"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "style"
+                          }
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "display"
+                        }
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": "unset",
+                        "raw": "\"unset\""
+                      }
+                    }
+                  }
+                ]
+              },
+              "alternate": {
+                "type": "IfStatement",
+                "test": {
+                  "type": "Identifier",
+                  "name": "failure"
+                },
+                "consequent": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "document"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getElementById"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "result",
+                                  "raw": "\"result\""
+                                }
+                              ]
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "style"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "whiteSpace"
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "no-wrap",
+                          "raw": "\"no-wrap\""
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "document"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getElementById"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "result",
+                                  "raw": "\"result\""
+                                }
+                              ]
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "style"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "display"
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "block",
+                          "raw": "\"block\""
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": true,
+                              "object": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "document"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "getElementById"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "result",
+                                      "raw": "\"result\""
+                                    }
+                                  ]
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "childNodes"
+                                }
+                              },
+                              "property": {
+                                "type": "Literal",
+                                "value": 9,
+                                "raw": "9"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "style"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "display"
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "unset",
+                          "raw": "\"unset\""
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": true,
+                              "object": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "document"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "getElementById"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "result",
+                                      "raw": "\"result\""
+                                    }
+                                  ]
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "childNodes"
+                                }
+                              },
+                              "property": {
+                                "type": "Literal",
+                                "value": 11,
+                                "raw": "11"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "style"
+                            }
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "display"
+                          }
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "unset",
+                          "raw": "\"unset\""
+                        }
+                      }
+                    }
+                  ]
+                },
+                "alternate": {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "Identifier",
+                    "name": "remove"
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "document"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getElementById"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "result",
+                                    "raw": "\"result\""
+                                  }
+                                ]
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "whiteSpace"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "no-wrap",
+                            "raw": "\"no-wrap\""
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "document"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getElementById"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "result",
+                                    "raw": "\"result\""
+                                  }
+                                ]
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "block",
+                            "raw": "\"block\""
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "document"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "getElementById"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": "result",
+                                        "raw": "\"result\""
+                                      }
+                                    ]
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "childNodes"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Literal",
+                                  "value": 13,
+                                  "raw": "13"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "unset",
+                            "raw": "\"unset\""
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "document"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "getElementById"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": "result",
+                                        "raw": "\"result\""
+                                      }
+                                    ]
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "childNodes"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Literal",
+                                  "value": 15,
+                                  "raw": "15"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "unset",
+                            "raw": "\"unset\""
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "document"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getElementById"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "result",
+                                    "raw": "\"result\""
+                                  }
+                                ]
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "none",
+                            "raw": "\"none\""
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "document"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "getElementById"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": "result",
+                                        "raw": "\"result\""
+                                      }
+                                    ]
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "childNodes"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Literal",
+                                  "value": 1,
+                                  "raw": "1"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "none",
+                            "raw": "\"none\""
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "MemberExpression",
+                                "computed": true,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "document"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "getElementById"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": "result",
+                                        "raw": "\"result\""
+                                      }
+                                    ]
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "childNodes"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Literal",
+                                  "value": 3,
+                                  "raw": "3"
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "none",
+                            "raw": "\"none\""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "alternate": null
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "computed": false,
+              "object": {
+                "type": "Identifier",
+                "name": "document"
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "querySelector"
+              }
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "#file-input",
+                "raw": "\"#file-input\""
+              }
+            ]
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "addEventListener"
+          }
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "change",
+            "raw": "\"change\""
+          },
+          {
+            "type": "FunctionExpression",
+            "id": null,
+            "params": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "submitButton"
+                      },
+                      "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "document"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "querySelector"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "#submit-button",
+                            "raw": "\"#submit-button\""
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "uploadLabel"
+                      },
+                      "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "document"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "querySelector"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "#uploadLabel",
+                            "raw": "\"#uploadLabel\""
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "kind": "var"
+                },
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": ">",
+                    "left": {
+                      "type": "MemberExpression",
+                      "computed": false,
+                      "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "ThisExpression"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "files"
+                        }
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "length"
+                      }
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 0,
+                      "raw": "0"
+                    }
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "submitButton"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "disabled"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": false,
+                            "raw": "false"
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "submitButton"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "classList"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "add"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "submit-button",
+                              "raw": "\"submit-button\""
+                            },
+                            {
+                              "type": "Literal",
+                              "value": "submit-button-large",
+                              "raw": "\"submit-button-large\""
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "uploadLabel"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "classList"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "add"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "uploadLabel-small",
+                              "raw": "\"uploadLabel-small\""
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "submitButton"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "",
+                            "raw": "\"\""
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "alternate": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "submitButton"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "disabled"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": true,
+                            "raw": "true"
+                          }
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "submitButton"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "classList"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "remove"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "submit-button",
+                              "raw": "\"submit-button\""
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "ThisExpression"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "classList"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "remove"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "uploadLabel-small",
+                              "raw": "\"uploadLabel-small\""
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "submitButton"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "style"
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "display"
+                            }
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "none",
+                            "raw": "\"none\""
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "generator": false,
+            "expression": false,
+            "async": false
+          }
+        ]
+      }
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "computed": false,
+          "object": {
+            "type": "Identifier",
+            "name": "document"
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "getElementById"
+          }
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "remove-button",
+            "raw": "\"remove-button\""
+          }
+        ]
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "button"
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "document"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "getElementById"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "remove-button",
+                      "raw": "\"remove-button\""
+                    }
+                  ]
+                }
+              }
+            ],
+            "kind": "let"
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "computed": false,
+                "object": {
+                  "type": "Identifier",
+                  "name": "button"
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "addEventListener"
+                }
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "click",
+                  "raw": "\"click\""
+                },
+                {
+                  "type": "FunctionExpression",
+                  "id": null,
+                  "params": [],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                          {
+                            "type": "VariableDeclarator",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "data"
+                            },
+                            "init": {
+                              "type": "NewExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "FormData"
+                              },
+                              "arguments": []
+                            }
+                          }
+                        ],
+                        "kind": "let"
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "Identifier",
+                              "name": "data"
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "append"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "Literal",
+                              "value": "key",
+                              "raw": "\"key\""
+                            },
+                            {
+                              "type": "Literal",
+                              "value": "value",
+                              "raw": "\"value\""
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "fetch"
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Literal",
+                                  "value": "/remove",
+                                  "raw": "\"/remove\""
+                                },
+                                {
+                                  "type": "ObjectExpression",
+                                  "properties": [
+                                    {
+                                      "type": "Property",
+                                      "key": {
+                                        "type": "Identifier",
+                                        "name": "method"
+                                      },
+                                      "computed": false,
+                                      "value": {
+                                        "type": "Literal",
+                                        "value": "POST",
+                                        "raw": "\"POST\""
+                                      },
+                                      "kind": "init",
+                                      "method": false,
+                                      "shorthand": false
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "then"
+                            }
+                          },
+                          "arguments": [
+                            {
+                              "type": "ArrowFunctionExpression",
+                              "id": null,
+                              "params": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "response"
+                                }
+                              ],
+                              "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                  {
+                                    "type": "IfStatement",
+                                    "test": {
+                                      "type": "BinaryExpression",
+                                      "operator": "===",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "response"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "status"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "Literal",
+                                        "value": 200,
+                                        "raw": "200"
+                                      }
+                                    },
+                                    "consequent": {
+                                      "type": "BlockStatement",
+                                      "body": [
+                                        {
+                                          "type": "ExpressionStatement",
+                                          "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                              "type": "MemberExpression",
+                                              "computed": false,
+                                              "object": {
+                                                "type": "Identifier",
+                                                "name": "location"
+                                              },
+                                              "property": {
+                                                "type": "Identifier",
+                                                "name": "href"
+                                              }
+                                            },
+                                            "right": {
+                                              "type": "Literal",
+                                              "value": "/augment.html?remove",
+                                              "raw": "\"/augment.html?remove\""
+                                            }
+                                          }
+                                        }
+                                      ]
+                                    },
+                                    "alternate": null
+                                  }
+                                ]
+                              },
+                              "generator": false,
+                              "expression": false,
+                              "async": false
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "generator": false,
+                  "expression": false,
+                  "async": false
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "alternate": null
+    }
+  ],
+  "sourceType": "script"
+}

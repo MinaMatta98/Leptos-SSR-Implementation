@@ -1,0 +1,116 @@
+[package]
+name = "actix_leptos"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+# serde_json = "1.0.94"
+serde = "1.0.159"
+styled = { version = "0.1.36", features = [] }
+stylist = { version = "0.12.0", default_features = true, features = ["parser"] }
+console_error_panic_hook = "0.1"
+console_log = "1"
+cfg-if = "1"
+simple_logger = "4"
+actix-files = { version = "0.6.2", optional = true }
+actix-web = { version = "4.3.1", optional = true ,features = ["macros"] }
+actix-http = { version = "3.3.1", features = [], optional = true }
+# actix-multipart = {version = "0.6.0", optional = true }
+mime_guess = "2.0.4"
+env_logger = "0.10.0"
+log = "0.4"
+# actix-multipart = "0.2.0"
+leptos = { version = "0.2", default-features = false, features = ["serde", "tracing"] }
+leptos_meta = { version = "0.2", default-features = false, features = [] }
+leptos_dom = { version = "0.2", default-features = false, features = [] }
+leptos_actix = { version = "0.2", optional = true, default-features = false }
+leptos_router = { version = "0.2", default-features = false, features = [] }
+wasm-bindgen = { version = "0.2.84", features = [] }
+futures-util = { version = "0.3.28", features = ["tokio-io"] }
+wasm-bindgen-futures = { version = "0.4.34", features = ["futures-core", "futures-core-03-stream"] }
+mio = "0.7.5"
+tokio = { version = "1.27.0", features = ["io-util", "rt", "fs"], optional = true}
+cairo-rs = { version = "0.15.12", features = ["pdf", "png"], optional = true }
+poppler = { version = "0.3.2", optional = true }
+glib = { version = "0.17.3", optional = true }
+image = "0.24.5"
+rand = "0.7.3"
+web-sys = { version = "0.3.61", features = ["EventTarget", "Event", "FileList", "SubmitEvent","HtmlImageElement",
+"HtmlCollection", "Element", "File", "Blob", "HtmlInputElement", "Document", "HtmlDocument", "FileReader"] }
+js-sys = "0.3.61"
+getrandom = { version = "0.2.8", features = ["js"] }
+gloo-net = "0.2.6"
+gloo-events = "0.1.2"
+
+
+[features]
+default = ["ssr"]
+hydrate = ["leptos/hydrate", "leptos_meta/hydrate", "leptos_router/hydrate"]
+csr = ["leptos/csr", "leptos_meta/csr", "leptos_router/csr"]
+ssr = [
+  "dep:actix-files",
+  "dep:actix-web",
+  "dep:leptos_actix",
+  "dep:cairo-rs",
+  "dep:tokio",
+  "dep:poppler",
+  "dep:glib",
+  "leptos/ssr",
+  "leptos_meta/ssr",
+  "leptos_router/ssr",
+]
+
+[package.metadata.leptos]
+# The name used by wasm-bindgen/cargo-leptos for the JS/WASM bundle. Defaults to the crate name   
+output-name = "actix_leptos"
+# The site root folder is where cargo-leptos generate all output. WARNING: all content of this folder will be erased on a rebuild. Use it in your server setup.
+site-root = "target/site/"
+# The site-root relative folder where all compiled output (JS, WASM and CSS) is written
+# Defaults to pkg	
+site-pkg-dir = "pkg"
+# bin-target-triple = "x86_64-unknown-linux-gnu"
+# [Optional] The source CSS file. If it ends with .sass or .scss then it will be compiled by dart-sass into CSS. The CSS is optimized by Lightning CSS before being written to <site-root>/<site-pkg>/app.css
+# style-file = "style/main.scss"
+# Assets source dir. All files found here will be copied and synchronized to site-root.
+# The assets-dir cannot have a sub directory with the same name/path as site-pkg-dir.
+# tailwind-input-file = "style/tailwind.css"
+# Optional. Env: LEPTOS_ASSETS_DIR.
+# assets-dir = "assets"
+# The IP and port (ex: 127.0.0.1:3000) where the server serves the content. Use it in your server setup.
+assets-dir = "assets"
+site-addr = "127.0.0.1:8000"
+# The port to use for automatic reload monitoring
+reload-port = 3001
+# [Optional] Command to use when running end2end tests. It will run in the end2end dir.
+#   [Windows] for non-WSL use "npx.cmd playwright test"
+#   This binary name can be checked in Powershell with Get-Command npx
+# end2end-cmd = "npx playwright test"
+# end2end-dir = "end2end"
+#  The browserlist query used for optimizing the CSS.
+browserquery = "defaults" # Set by cargo-leptos watch when building with that tool. Controls whether autoreload JS will be included in the head
+watch = true
+# The environment Leptos will run in, usually either "DEV" or "PROD"
+env = "DEV"
+# The features to use when compiling the bin target
+#
+# Optional. Can be over-ridden with the command line parameter --bin-features
+bin-features = ["ssr"]
+
+# If the --no-default-features flag should be used when compiling the bin target
+#
+# Optional. Defaults to false.
+bin-default-features = false
+
+# The features to use when compiling the lib target
+#
+# Optional. Can be over-ridden with the command line parameter --lib-features
+lib-features = ["hydrate"]
+
+# If the --no-default-features flag should be used when compiling the lib target
+#
+# Optional. Defaults to false.
+lib-default-features = false
