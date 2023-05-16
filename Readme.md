@@ -1,6 +1,7 @@
 # Actix-Web-Leptos
 This project is an example of combining the following libraries to achieve low-latency SSR web-applications, that can perform back-end operation:
 
+* [Actix-web](https://actix.rs/)
 * [Leptos-RS](https://github.com/leptos-rs/leptos)
 * [Tokio-RS](https://tokio.rs/)
 * [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen)
